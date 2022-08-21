@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.github.MattSturgeon.OverlayService
+Exec=/usr/bin/overlay-service
+User=root
+SystemdService=overlay.service

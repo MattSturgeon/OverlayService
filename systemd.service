@@ -1,0 +1,11 @@
+[Unit]
+Description=OverlayService
+
+[Service]
+Type=dbus
+BusName=org.github.MattSturgeon.OverlayService
+ExecStart=/usr/bin/overlay-service
+User=root
+
+[Install]
+WantedBy=default.target
