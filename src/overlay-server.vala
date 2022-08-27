@@ -25,14 +25,14 @@
      }
  
      public void ping_error () throws Error {
-         throw new DemoError.SOME_ERROR ("There was an error!");
+         throw new OverlayServiceError.SOME_ERROR ("There was an error!");
      }
  
      public signal void pong (int count, string msg);
  }
  
- [DBus (name = "org.example.DemoError")]
- public errordomain DemoError
+ [DBus (name = "org.github.MattSturgeon.OverlayService.OverlayServiceError")]
+ public errordomain OverlayServiceError
  {
      SOME_ERROR
  }
