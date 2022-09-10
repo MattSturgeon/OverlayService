@@ -4,7 +4,7 @@ Description=OverlayService
 [Service]
 Type=dbus
 BusName=org.github.MattSturgeon.OverlayService
-ExecStart=/usr/bin/overlay-service
+ExecStart=/usr/bin/overlay --server
 User=root
 
 [Install]

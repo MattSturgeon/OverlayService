@@ -1,9 +1,9 @@
 #!/bin/sh
 
-echo "Installing server binary to /usr/bin/overlay-service"
+echo "Installing server binary to /usr/bin/overlay"
 mkdir -p /usr/bin
-rm -rf /usr/bin/overlay-service
-ln -s "$(realpath ./builddir/src/overlay-service)" /usr/bin/overlay-service
+rm -rf /usr/bin/overlay
+ln -s "$(realpath ./builddir/src/overlay)" /usr/bin/overlay
 
 echo "Installing dbus permissions config to /usr/share/dbus-1/system.d/org.github.MattSturgeon.OverlayService.conf"
 mkdir -p /usr/share/dbus-1/system.d/

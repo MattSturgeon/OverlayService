@@ -5,11 +5,10 @@ dependencies = [
 ]
 
 sources = files(
-    'overlay-server.vala',
+    'main.vala',
+    'client.vala',
+    'server.vala',
     'freedesktop-dbus.vala',
 )
 
-executable('overlay-service', sources, dependencies: dependencies)
-
-# Build a test/example client too TODO use meson tests
-executable('client', files('client.vala'), dependencies: dependencies)
+executable('overlay', sources, dependencies: dependencies)
