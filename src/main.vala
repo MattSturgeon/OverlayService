@@ -32,7 +32,8 @@ public class Main : Object {
 
         if (version) {
             // TODO meson config.h
-            print ("Test 0.1\n");
+            print ("Version %s\n", Config.VERSION);
+            global::Config.VERSION;
             return 0;
         }
 

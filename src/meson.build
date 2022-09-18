@@ -11,4 +11,4 @@ sources = files(
     'freedesktop-dbus.vala',
 )
 
-executable('overlay', sources, dependencies: dependencies)
+executable('overlay', sources, dependencies: dependencies, include_directories: config_h_dir)
